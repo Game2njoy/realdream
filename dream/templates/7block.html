@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Intro Single ======= -->
+    <section class="intro-single">
+      <div class="container jamsil">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">DMC마스터원 - <span class="color-b">7블럭</span></h1>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="{% url 'index' %}">향동지식산업센터</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  7블럭
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Intro Single-->
+
+    <!-- ======= About Section ======= -->
+    <section class="section-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 position-relative">
+            {% for i in image_files %}
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                <div class="title-box" style="text-align:center;">
+                  <img src="{% static i %}" alt="" class="img-fluid mt-4 rounded">
+                </div>
+                </div>
+              </div>
+            </div>
+            {% comment %} <div class="sinse-box">
+              <h3 class="sinse-title">EstateAgency
+                <span></span>
+                <br> Sinse 2017
+              </h3>
+              <p>Art & Creative</p>
+            </div>
+          </div> {% endcomment %}
+          {% endfor %}
+          <div id="carouselExampleIndicators" class="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
+              {% for i in image_files2  %}
+              {% if not forloop.last %}
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{forloop.counter}}" aria-label="Slide {{forloop.counter}}"></button>
+              {% endif %}
+              {% endfor %}
+            </div>
+            <div class="carousel-inner">
+              {% for i in image_files2  %}
+              <div class="carousel-item {% if forloop.first%}active{% endif %}">
+                <img src="{% static i %}" class="d-block w-75 mx-auto" alt="...">
+              </div>
+              {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+              <div class="title-box" style="text-align:center;">
+                <img src="{% static 'img/대문2/향동폰베너메뉴.png' %}" class="img-fluid mt-5 rounded" alt="홈 안내">
+              </div>
+              </div>
+            </div>
+          </div>
+
+  </main><!-- End #main -->
+
+  {% endblock content%}
