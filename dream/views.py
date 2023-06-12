@@ -56,3 +56,6 @@ def block4(request):
     prefix = 'img/4블럭/향4배치도/'
     image_files2 = [prefix + file_name for file_name in image_files2]
     return render(request, '4block.html', {'image_files': image_files, 'image_files2': image_files2,})
+
+def page_not_found(request, exception):
+    return render(request, 'common/404.html', {})
