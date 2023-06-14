@@ -148,7 +148,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand jamsil" href="{% url 'index' %}">드림<span class="color-b">향동</span></a>
+      <a class="navbar-brand text-brand jamsil" href="{% url 'index' %}">지산을 <span class="color-b">부탁해</span></a>
 
       <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
         <ul class="navbar-nav">
@@ -218,7 +218,7 @@
         <div class="col-sm-12 col-md-2">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand jamsil ms-3">드림<span class="color-b">향동</span></h3>
+              <h3 class="w-title-a text-brand jamsil ms-3" style="width: 300px;">지산을 <span class="color-b">부탁해</span></h3>
             </div>
           </div>
         </div>
@@ -228,20 +228,25 @@
               <p class="w-text-a color-text-a text-center">
                 <br>
                 <br>
-                덕은드림부동산 공인중개사 사무소<br>
+                <br>
+                <strong>덕은드림부동산 공인중개사 사무소<br></strong>
                 대표 - 김태경<br>
-                주소 - 경기도 고양시 덕양구 으뜸로. 130 203호<br>
-                사업자 번호 - 177-19-01413<br>
-                등록번호 - 제41281-2021-00195호
+                <strong>주소</strong><br>경기도 고양시 덕양구 으뜸로. 130 203호<br>
+                <strong>사업자 번호</strong><br>177-19-01413<br>
+                <strong>등록번호</strong><br>제41281-2021-00195호<br>
+                <strong>대표전화</strong><br>02-3158-5517/010-4495-3450<br><br>
+                <strong>향동지식산업센터 대표상담</strong><br>
+                <a href="{% url 'index' %}">지산을부탁해.com</a><br><br>
+                <strong>광고 문의</strong><br>010-3393-3450
               </p>
             </div>
-            <div class="w-footer-a">
+            {% comment %} <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">대표전화 - </span> 02-3158-5517, 010-4495-3450
+                  <span class="color-text-a">대표전화 - </span><br>02-3158-5517/010-4495-3450
                 </li>
               </ul>
-            </div>
+            </div> {% endcomment %}
           </div>
         </div>
       </div>
@@ -289,6 +294,11 @@
               <li class="list-inline-item">
                 <a href="https://talk.naver.com/ct/w4a4qu?frm=mnmb&frm=nmb_detail">
                   <img src="{% static 'ico/Naver.png' %}" alt="My Icon" height="50" width="50" loading="lazy" class="rounded">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="tel:010-4495-3450">
+                  <img src="{% static 'ico/call.png' %}" alt="My Icon" height="57" width="57" loading="lazy" class="rounded">
                 </a>
               </li>
             </ul>

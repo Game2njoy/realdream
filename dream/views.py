@@ -13,6 +13,7 @@ def block5(request):
     image_files2 = os.listdir('./static/img/5블럭/향5배치도')
     prefix = 'img/5블럭/향5배치도/'
     image_files2 = [prefix + file_name for file_name in image_files2]
+    print(image_files2)
     return render(request, '5block.html', {'image_files': image_files, 'image_files2': image_files2,})
 
 def block6(request):
@@ -58,4 +59,4 @@ def block4(request):
     return render(request, '4block.html', {'image_files': image_files, 'image_files2': image_files2,})
 
 def page_not_found(request, exception):
-    return render(request, 'common/404.html', {})
+    return render(request, '404.html', {})

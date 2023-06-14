@@ -9,9 +9,9 @@
       {% comment %} swiper-wrapper {% endcomment %}
 
 
-  <div class="swiper-slide carousel-item-a intro-item bg-image" data-swiper-autoplay="5000">
+  <div class="swiper-slide carousel-item-a intro-item bg-image" id="a2" data-swiper-autoplay="5000">
         <div class="overlay"></div>
-        <div class="intro-content display-table">
+        <a href="{% url 'block1' %}"><div class="intro-content display-table">
           <div class="table-cell">
             <div class="container">
               <div class="row">
@@ -30,12 +30,12 @@
               </div>
             </div>
           </div>
-        </div>
+        </div></a>
       </div>
 
   <div class="swiper-slide carousel-item-a intro-item bg-image" id="a1" data-swiper-autoplay="5000">
         <div class="overlay"></div>
-        <div class="intro-content display-table">
+        <a href="{% url 'block5' %}"><div class="intro-content display-table">
           <div class="table-cell">
             <div class="container">
               <div class="row">
@@ -54,7 +54,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div></a>
       </div>
   
       {% comment %} <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url({% static 'img/slide-2.jpg' %})">
@@ -735,7 +735,7 @@
         <div class="row">
           <div class="col-md-12">
           <div class="title-box" style="text-align:center;">
-            <img src="{% static 'img/대문2/향동폰베너메뉴.png' %}" class="img-fluid mt-5 rounded" alt="홈 안내">
+            <a href="tel:010-4495-3450"><img src="{% static 'img/대문2/향동폰베너메뉴.png' %}" class="img-fluid mt-5 rounded" alt="홈 안내"></a>
           </div>
           </div>
         </div>
