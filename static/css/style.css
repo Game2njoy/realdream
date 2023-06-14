@@ -187,11 +187,12 @@ a:hover {
 /*------/ Bg Image /------*/
 
 .swiper-slide#a2{
-  pointer-events: none;
+  
   background-image: url('../img/대문2/폰대문1.png');
 }
 @media (min-width: 769px) {
   .swiper-slide#a2{
+    pointer-events: none;
     background-image: url('../img/대문2/향1대문.png');
   }
 }
