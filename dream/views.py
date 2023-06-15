@@ -13,6 +13,7 @@ def block5(request):
     image_files2 = os.listdir('./static/img/5블럭/향5배치도')
     prefix = 'img/5블럭/향5배치도/'
     image_files2 = [prefix + file_name for file_name in image_files2]
+    image_files2.sort()
     print(image_files2)
     return render(request, '5block.html', {'image_files': image_files, 'image_files2': image_files2,})
 
@@ -21,6 +22,7 @@ def block6(request):
     image_files2 = os.listdir('./static/img/6블럭/향6배치도')
     prefix = 'img/6블럭/향6배치도/'
     image_files2 = [prefix + file_name for file_name in image_files2]
+    image_files2.sort()
     return render(request, '6block.html', {'image_files': image_files, 'image_files2': image_files2,})
 
 def block7(request):
@@ -28,6 +30,7 @@ def block7(request):
     image_files2 = os.listdir('./static/img/7블럭/향7배치도')
     prefix = 'img/7블럭/향7배치도/'
     image_files2 = [prefix + file_name for file_name in image_files2]
+    image_files2.sort()
     return render(request, '7block.html', {'image_files': image_files, 'image_files2': image_files2,})
 
 def block8(request):
@@ -35,6 +38,7 @@ def block8(request):
     image_files2 = os.listdir('./static/img/8블럭/향8배치도')
     prefix = 'img/8블럭/향8배치도/'
     image_files2 = [prefix + file_name for file_name in image_files2]
+    image_files2.sort()
     return render(request, '8block.html', {'image_files': image_files, 'image_files2': image_files2,})
 
 def block9(request):
@@ -42,6 +46,7 @@ def block9(request):
     image_files2 = os.listdir('./static/img/9블럭/향9배치도')
     prefix = 'img/9블럭/향9배치도/'
     image_files2 = [prefix + file_name for file_name in image_files2]
+    image_files2.sort()
     return render(request, '9block.html', {'image_files': image_files, 'image_files2': image_files2,})
 
 def block1(request):
@@ -49,6 +54,7 @@ def block1(request):
     image_files2 = os.listdir('./static/img/1블럭/향1배치도')
     prefix = 'img/1블럭/향1배치도/'
     image_files2 = [prefix + file_name for file_name in image_files2]
+    image_files2.sort()
     return render(request, '1block.html', {'image_files': image_files, 'image_files2': image_files2,})
 
 def block4(request):
@@ -56,6 +62,7 @@ def block4(request):
     image_files2 = os.listdir('./static/img/4블럭/향4배치도')
     prefix = 'img/4블럭/향4배치도/'
     image_files2 = [prefix + file_name for file_name in image_files2]
+    image_files2.sort()
     return render(request, '4block.html', {'image_files': image_files, 'image_files2': image_files2,})
 
 def page_not_found(request, exception):
