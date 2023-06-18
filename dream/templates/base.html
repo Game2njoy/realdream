@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>드림향동</title>
+  <title>지산을 부탁해</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -43,6 +43,9 @@
     .carousel-indicators [data-bs-target] {
       width: 40px;
       height: 9px;
+    }
+    .dropup .dropdown-toggle::after {
+      display: none;
     }
   </style>
 
@@ -188,6 +191,10 @@
           <li class="nav-item">
             <a class="nav-link" href="https://dr0231585517.modoo.at/" target="_blank">매물소개</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="http://xn--bn1b02a80in1q.com/page/?4" target="_blank">덕은지식산업센터</a>
+          </li>
           {% comment %} <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">매물소개</a>
             <div class="dropdown-menu">
@@ -287,12 +294,12 @@
           <div class="socials-a">
             <ul class="list-inline">
               <li class="list-inline-item">
-                <a href="https://open.kakao.com/o/skyaXXif">
+                <a href="https://open.kakao.com/o/skyaXXif" target="_blank">
                   <img src="{% static 'ico/kakao.ico' %}" alt="My Icon" height="50" width="50" loading="lazy" class="rounded">
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://talk.naver.com/ct/w4a4qu?frm=mnmb&frm=nmb_detail">
+                <a href="https://talk.naver.com/ct/w4a4qu?frm=mnmb&frm=nmb_detail" target="_blank">
                   <img src="{% static 'ico/Naver.png' %}" alt="My Icon" height="50" width="50" loading="lazy" class="rounded">
                 </a>
               </li>
@@ -324,7 +331,20 @@
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div class="dropup">
+    <button class="back-to-top1 d-flex align-items-center justify-content-center dropdown-toggle" style="border: none; padding-top: 4px;" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-chat-square-dots-fill"></i>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item jamsil" href="tel:010-4495-3450"><i class="bi bi-telephone-fill"></i>  전화하기</a></li>
+      <li><a class="dropdown-item jamsil" href="https://talk.naver.com/ct/w4a4qu?frm=mnmb&frm=nmb_detail" target="_blank"><i class="bi bi-chat-right-dots-fill"></i>  네이버 톡톡</a></li>
+      <li><a class="dropdown-item jamsil" href="https://open.kakao.com/o/skyaXXif" target="_blank"><i class="bi bi-chat-fill" style="color:black;"></i>  카카오톡</a></li>
+    </ul>
+  </div>
+
+  <div class="btop"><a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up"></i></a></div>
+
 
   <!-- lib JS Files -->
   <script src="{% static 'lib/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
