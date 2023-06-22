@@ -15,13 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, re_path
-from django.views.static import serve
-from django.conf import base
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('dream.urls')),
-    re_path(r'^robots.txt$', serve, {'path': 'robots.txt', 'document_root': base.STATIC_ROOT}),
+    path('robots.txt/', TemplateView.as_view(template_name="robots.txt", 
+         content_type='text/plain')),
 ]
 
 handler404 = 'common.views.page_not_found'
