@@ -14,11 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
+from django.views.static import serve
+from django.conf import base
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('dream.urls')),
+    re_path(r'^robots.txt$', serve, {'path': 'robots.txt', 'document_root': base.STATIC_ROOT}),
 ]
 
 handler404 = 'common.views.page_not_found'
