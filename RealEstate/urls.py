@@ -25,4 +25,4 @@ urlpatterns = [
     path('sitemap.xml', TemplateView.as_view(template_name="sitemap.xml", content_type='application/xml')),
 ]
 
-handler404 = 'common.views.page_not_found'
+handler404 = 'dream.views.page_not_found'

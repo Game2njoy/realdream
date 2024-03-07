@@ -57,7 +57,7 @@
         </div></a>
       </div>
   
-      {
+      
     </div>
     <div class="swiper-pagination"></div>
   </div><!-- End Intro Section -->
@@ -89,6 +89,7 @@
                     <div class="col-sm-12 position-relative">
                       <div class="about-img-box"> {% endcomment %}
                         <a href="https://o1026357136.modoo.at" target="_blank "><img src="{% static 'img/지도/마곡.png' %}" class="img-fluid mt-5 rounded" alt="마곡"></a>
+                        <a href="https://jjisanlove337.modoo.at " target="_blank "><img src="{% static 'img/지도/gl메트로.png' %}" class="img-fluid mt-5 rounded" alt="마곡"></a>
                         <a href="http://xn--bn1b02a80in1q.com/page/?4" target="_blank "><img src="{% static 'img/지도/덕은지식산업센터.png' %}" class="img-fluid mt-5 rounded" alt="덕은지구" width="1100"></a>
 
                         <a href="https://m.land.naver.com/agency/info/jisanlove4128?tradTpCd=&atclRletTpCd=" target="_blank "><img src="{% static 'img/대문2/네이버바로가기.png' %}" class="img-fluid mt-5 rounded" alt="지산사랑" width="1100"></a>
@@ -120,22 +121,22 @@
           <div class="col-md-12">
             <div class="d-flex justify-content-between">
               <div class="title-box">
-                <h2 class="title-a">매물 <span class="color-b">소개</span></h2>
+                <h2 class="title-a">문의 <span class="color-b">하기</span></h2>
               </div>  
             </div>
-            <div class="title-link d-flex justify-content-end mb-3">
+            {% comment %} <div class="title-link d-flex justify-content-end mb-3">
               <a href="https://dr0231585517.modoo.at/" target="_blank">더보기
                 <span class="bi bi-chevron-right"></span>
               </a>
-            </div>
+            </div> {% endcomment %}
           </div>
         </div>
+        <br>
 
-        <div id="property-carousel" class="swiper">
+        {% comment %} <div id="property-carousel" class="swiper">
           <div class="swiper-wrapper">
 
             <div class="carousel-item-b swiper-slide">
-              {% comment %} card-shadow {% endcomment %}
               <div class="card-box-a">
                 <div class="img-box-a">
                   <a href="https://jjisanlove337.modoo.at/?link=6mh4nbqz" target="_blank"><img src="{% static 'img/매물소개/향4.png' %}" alt="" class="img-a img-fluid"></a>
@@ -188,13 +189,32 @@
                
                 </div>
               </div>
-            </div><!-- End carousel item -->
+            </div><!-- End carousel item -->{% endcomment %}
           </div>
         </div>
-        <div class="propery-carousel-pagination carousel-pagination"></div>
+        {% comment %} <div class="propery-carousel-pagination carousel-pagination"></div>
 
-      </div>
+      </div>  {% endcomment %}
     </section>
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class='col-md-4 col-4 col-lg-3'>
+          <a href="https://jjisanlove337.modoo.at/?link=6mh4nbqz" target="_blank">
+            <img src="{% static 'img/지도/카톡.png' %}" alt="카톡" class="img-fluid" style="width: 400px; height: auto;"></a>
+        </div>
+        <div class='col-md-4 col-4 col-lg-3'>
+          <a href="https://jjisanlove337.modoo.at/?link=6mh4nbqz" target="_blank">
+            <img src="{% static 'img/지도/전화.png' %}" alt="전화" class="img-fluid" style="width: 400px; height: auto;"></a>
+        </div>
+        <div class='col-md-4 col-4 col-lg-3'>
+          <a href="https://jjisanlove337.modoo.at/?link=6mh4nbqz" target="_blank">
+            <img src="{% static 'img/지도/톡톡.png' %}" alt="톡톡" class="img-fluid" style="width: 400px; height: auto;"></a>
+        </div>
+      </div>
+    </div>
+
 
       <div class="container">
         <div class="row">
