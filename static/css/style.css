@@ -221,6 +221,98 @@ a:hover {
   }
 }
 
+
+.swiper-slide#a3{
+  background-image: url('../img/대문2/4블럭.png');
+}
+
+@media (min-width: 769px) {
+  .swiper-slide#a3{
+    pointer-events: none;
+    background-image: url('../img/대문2/향1대문.png');
+  }
+}
+
+
+.swiper-slide#a4{
+  background-image: url('../img/대문2/5블럭.png');
+}
+
+@media (min-width: 769px) {
+  .swiper-slide#a4{
+    pointer-events: none;
+    background-image: url('../img/대문2/향5대문.png');
+  }
+}
+
+
+.swiper-slide#a5{
+  background-image: url('../img/대문2/6블럭.png');
+}
+
+@media (min-width: 769px) {
+  .swiper-slide#a5{
+    pointer-events: none;
+    background-image: url('../img/대문2/향1대문.png');
+  }
+}
+
+
+.swiper-slide#a6{
+  background-image: url('../img/대문2/7블럭.png');
+}
+
+@media (min-width: 769px) {
+  .swiper-slide#a6{
+    pointer-events: none;
+    background-image: url('../img/대문2/향5대문.png');
+  }
+}
+
+
+.swiper-slide#a7{
+  background-image: url('../img/대문2/8블럭.png');
+}
+
+@media (min-width: 769px) {
+  .swiper-slide#a7{
+    pointer-events: none;
+    background-image: url('../img/대문2/향1대문.png');
+  }
+}
+
+
+.swiper-slide#a8{
+  background-image: url('../img/대문2/9블럭.png');
+}
+
+@media (min-width: 769px) {
+  .swiper-slide#a8{
+    pointer-events: none;
+    background-image: url('../img/대문2/향5대문.png');
+  }
+}
+
+
+.swiper-slide#a9{
+  background-image: url('../img/대문2/매물접수중.png');
+}
+
+@media (min-width: 769px) {
+  .swiper-slide#a9{
+    pointer-events: none;
+    background-image: url('../img/대문2/향1대문.png');
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+
 .bg-image {
   background-repeat: no-repeat;
   background-attachment: fixed;
