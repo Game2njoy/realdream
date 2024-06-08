@@ -9,7 +9,7 @@ def index(request):
     return render(request, 'index.html', {'image_files': image_files})
 
 def block5(request):
-    image_files = ['img/5블럭/5BL블럭 안내.png', 'img/5블럭/향동5대문.png', 'img/5블럭/향5개요.png', 'img/5블럭/5특징1100_800.png',]
+    image_files = ['img/5블럭/5BL블럭 안내.png', 'img/5블럭/상담바로가기.jpg', 'img/5블럭/향동5대문.png', 'img/5블럭/향5개요.png', 'img/5블럭/5특징1100_800.png',]
     image_files2 = os.listdir('./static/img/5블럭/향5배치도')
     prefix = 'img/5블럭/향5배치도/'
     image_files2 = [prefix + file_name for file_name in image_files2]
