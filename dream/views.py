@@ -34,7 +34,7 @@ def block7(request):
     return render(request, '7block.html', {'image_files': image_files, 'image_files2': image_files2,})
 
 def block8(request):
-    image_files = ['img/8블럭/8BL블럭 안내.png', 'img/8블럭/향동8대문.png', 'img/8블럭/향8개요.png', 'img/8블럭/8특징1100_800.png',]  # 변경 가능
+    image_files = ['img/8블럭/8BL블럭 안내.png', 'img/8블럭/향8 재분양.png', 'img/8블럭/향동8대문.png', 'img/8블럭/향8개요.png', 'img/8블럭/8특징1100_800.png',]  # 변경 가능
     image_files2 = os.listdir('./static/img/8블럭/향8배치도')
     prefix = 'img/8블럭/향8배치도/'
     image_files2 = [prefix + file_name for file_name in image_files2]
